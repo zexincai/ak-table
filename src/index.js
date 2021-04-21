@@ -2,9 +2,9 @@ import akTable from './ak-table.vue'
 
 const install = (Vue, options) => {
   if (options) {
-    Vue.prototype.$d2CrudSize = options.size ? options.size : null
+    Vue.prototype.$akTableSize = options.size ? options.size : null
   } else {
-    Vue.prototype.$d2CrudSize = null
+    Vue.prototype.$akTableSize = null
   }
   Vue.component('akTable', akTable)
 }
